@@ -1,0 +1,168 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+.carousel,
+.carousel_container,
+.carousel_pic,
+.carousel_content,
+.carousel_left,
+.carousel_center,
+.carousel_right,
+.carousel_title,
+.carousel_arrow,
+.carousel_left_arrow,
+.carousel_right_arrow,
+.carousel_subtitle,
+.carousel_arrow-h2,
+button,
+.slider_button,
+.slider_button_h2
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel_container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel_pic{
+    width: 100vw;
+    height: 112vh;
+    top: 50vh;
+}
+
+.carousel_content{
+    width: 100vw;
+    height: 100vh;
+    bottom: 50vh;
+}
+
+
+.carousel_arrow{
+    position: relative;
+    bottom: 55vh;
+    width:100vw;
+    height: 7vw;
+    z-index: 10;
+}
+
+.carousel_left,
+.carousel_right{
+    position: absolute;
+    height: 4vw;
+    width: 6vw;
+    cursor: pointer;
+}
+
+.carousel_left{
+    right: 5vw;
+}
+
+.carousel_right{
+    left: 5vw;
+}
+
+.carousel_left_arrow,
+.carousel_right_arrow{
+    border: none;
+    height: 4vw;
+    width: 6vw;
+    background-color: rgba(255,255,255,0.5);
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.carousel_left_arrow:hover,
+.carousel_right_arrow:hover{
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.5s linear;
+}
+
+.carousel_left_arrow:hover .carousel_arrow-h2,
+.carousel_right_arrow:hover .carousel_arrow-h2{
+    color: rgba(255,255,255,0.5);
+    transition: all 0.5s linear;
+}
+
+.carousel_left_arrow:active .carousel_arrow-h2,
+.carousel_right_arrow:active .carousel_arrow-h2 {
+    color: #ffa500;
+    transition: all 0.1s linear;
+}
+.carousel_arrow-h2{
+    font-size: 5vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,0.7);
+    transition: all 0.5s linear;
+}
+
+.carousel_center {
+   width: 100vw;
+    height: 100vh;
+}
+
+.carousel_title{
+    font-size: 4vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255,255,255,0.8);
+}
+
+.carousel_subtitle{
+    font-size: 4vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255,255,255,0.8);
+}
+
+.slider_button{
+    width: 10vw;
+    height: 5vh;
+    bottom: 10vh;
+    background-color:  rgba(255,255,255,0.8);
+    cursor: pointer;
+    border: none;
+    border-radius: 5vh;
+}
+
+.slider_button_h2{
+    width: 10vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,0.8);
+}
+
+.slider_button:hover{
+    background-color:  rgba(0,0,0,0.6);
+}
+
+.slider_button:hover .slider_button_h2{
+    color: rgba(255,255,255,0.8);
+}
+
+.slider_button:active .slider_button_h2{
+    color: #ffa500;
+}
+
